@@ -19,16 +19,16 @@
 
   <div class="margin appearance">
     
-    <h1 id = "heading" ><a href="../index.html"> <b>Home</b></a> &nbsp <a href="../blog-menu.html"> <b>Blogs</b></a> </h1>
+    <h1 id><a href="../index.html"> <b>Home</b></a> &nbsp <a href="../blog-menu.html"> <b>Blogs</b></a> </h1>
           
-      <p id = "text">
+      <p id>
       When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
       \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
       </p> 
       
-<img src="hmp.png" class="img-center" width=60% height=auto id = "img">
+<img src="hmp.png" class="img-center" width=60% height=auto>
 
-      <p = "text">
+      <p>
       When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
       \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
       </p> 
@@ -51,9 +51,12 @@ if (/Mobi|Android/i.test(userAgent)) {
 console.log(`Device Type: ${getDeviceType()}`);
 
 if(getDeviceType() == "Mobile"){
-   document.getElementById("text").style.fontSize = "12px"; 
-   document.getElementById("heading").style.fontSize = "16px"; 
-   document.getElementById("img").style.width = "100%"; 
+   var p = document.querySelectorAll("p");
+   p.forEach(function(p) {
+  p.style.fontSize = "12px";
+}) 
+   document.querySelector("h1").style.fontSize = "16px";
+   document.querySelector(".img-center").style.width = "100%";
 
 }
 
