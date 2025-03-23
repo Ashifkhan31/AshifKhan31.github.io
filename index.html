@@ -13,11 +13,11 @@
 
   <div class="margin appearance">
     
-    <h1><a href="index.html"> <b>Home</b></a> &nbsp <a href="blog-menu.html"> <b>Blogs</b></a> </h1>
+    <h1 id = "heading"><a href="index.html"> <b>Home</b></a> &nbsp <a href="blog-menu.html"> <b>Blogs</b></a> </h1>
      
       <img src="profile.webp" width = 20%; height= auto;>
       
-      <p>
+      <p id= "text" >
       Hello, I am Silli Chilli. I like studying math, computer science and love video games. 
       I am currently in college studying math, Its neat! <br> <br>
 
@@ -32,6 +32,25 @@
       </p> 
   </div>
 
+<script>
+function getDeviceType() {
+  const userAgent = navigator.userAgent;
+if (/Mobi|Android/i.test(userAgent)) {
+    return "Mobile";
+  } else if (/Tablet|iPad/i.test(userAgent)) {
+    return "Tablet";
+  } else {
+    return "Desktop";
+  }
+}
+console.log(`Device Type: ${getDeviceType()}`);
+
+if(getDeviceType() == "Mobile"){
+   document.getElementById("text").style.fontSize = "15px"; 
+   document.getElementById("heading").style.fontSize = "16px"; 
+}
+
+</script>
 </body>
 
 </html>

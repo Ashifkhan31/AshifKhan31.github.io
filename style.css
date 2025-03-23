@@ -14,10 +14,12 @@ a:link{
 
 h1{
   font-size: 32px;
+  id = "heading";
 }
 
 p{
   font-size: 30px;
+  id = "text";
 }
 
 li{
