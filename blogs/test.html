@@ -51,13 +51,23 @@ if (/Mobi|Android/i.test(userAgent)) {
 console.log(`Device Type: ${getDeviceType()}`);
 
 if(getDeviceType() == "Mobile"){
+
+   document.querySelector("h1").style.fontSize = "16px";
+
    var p = document.querySelectorAll("p");
    p.forEach(function(p) {
-  p.style.fontSize = "12px";
+     p.style.fontSize = "13px";
 }) 
-   document.querySelector("h1").style.fontSize = "16px";
-   document.querySelector(".img-center").style.width = "100%";
+  
+  var img = document.querySelectoAllr(".img-center");
+  img.forEach(function(img){
+    img.style.width = "100%";
+  })
 
+  var margin = document.querySelector(".margin");
+  margin.style.marginLeft = "1%";
+  margin.style.marginRight = "1%";
+  
 }
 
 </script>

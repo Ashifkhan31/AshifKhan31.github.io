@@ -33,10 +33,18 @@ if (/Mobi|Android/i.test(userAgent)) {
 }
 console.log(`Device Type: ${getDeviceType()}`);
 
-if(getDeviceType() == "Mobile"){
-   document.querySelector("li").style.fontSize = "12px"; 
-   document.querySelector("p").style.fontSize = "12px"; 
+if(getDeviceType() == "Desktop"){
    document.querySelector("h1").style.fontSize = "16px";
+
+   var li = document.querySelectorAll("li");
+   li.forEach(function(li) {
+     li.style.fontSize = "13px";
+}) 
+
+  var margin = document.querySelector(".margin");
+  margin.style.marginLeft = "1%";
+  margin.style.marginRight = "1%";
+
 }
 
 </script>
