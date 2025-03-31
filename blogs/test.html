@@ -50,13 +50,13 @@ if (/Mobi|Android/i.test(userAgent)) {
 }
 console.log(`Device Type: ${getDeviceType()}`);
 
-if(getDeviceType() == "Mobile"){
+if(getDeviceType() != "Desktop"){
 
    document.querySelector("h1").style.fontSize = "16px";
 
    var p = document.querySelectorAll("p");
    p.forEach(function(p) {
-     p.style.fontSize = "13px";
+     p.style.fontSize = "14px";
 }) 
   
   var img = document.querySelectorAll(".img-center");
@@ -65,8 +65,8 @@ if(getDeviceType() == "Mobile"){
   })
 
   var margin = document.querySelector(".margin");
-  margin.style.marginLeft = "1%";
-  margin.style.marginRight = "1%";
+  margin.style.marginLeft = "0.5%";
+  margin.style.marginRight = "0.5%";
   
 }
 
