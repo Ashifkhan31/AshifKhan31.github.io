@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>A few incoherent late night thoughts of mine</title> 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="katex/katex.min.css" rel="stylesheet" type="text/css">
+  <script defer src="katex/katex.min.js"></script>
+  
+  <script defer src="katex/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+
+</head>
+
+<body class="background">
+
+
+  <div class="margin appearance">
+    
+    <h1 id><a href="../index.html"> <b>Home</b></a> &nbsp <a href="../blog-menu.html"> <b>Blogs</b></a> </h1>
+    <p><b>A few incoherent late night thoughts of mine</b> &nbsp-&nbsp 6/8/2025</p>
+    
+    <p>
+    
+    I have been thinking about writing something for my site because it has been a while
+    since I have done anything with it and there isn’t any stuff in here to begin with.
+    So, wanted to change that and I really didn’t want to write something
+    just for the sake of writing. Yet, I wanted to write badly. I think its maybe
+    because it satisfies my need for expressing myself. <br> <br>
+    
+    I think there so many stuff on the internet which are created with consumption in mind
+    rather than people simply sharing stuff they like.
+    Now, The norm is to consume and creating is done by only a select
+    whose job is to cater the consumers. <br> <br>
+    
+    Mayhaps, I am a teensy bit egoistical but I do think my dumb rants hold
+    enough value to deserve to be inside a html file, that is few KB big,
+    tucked away in some corner of the internet. <br> <br>
+
+    So, that’s all I guess. I will try to write more.
+    
+    </p>
+
+  </div>
+
+</body>
+
+<script>
+function getDeviceType() {
+  const userAgent = navigator.userAgent;
+if (/Mobi|Android/i.test(userAgent)) {
+    return "Mobile";
+  } else if (/Tablet|iPad/i.test(userAgent)) {
+    return "Tablet";
+  } else {
+    return "Desktop";
+  }
+}
+console.log(`Device Type: ${getDeviceType()}`);
+
+if(getDeviceType() != "Desktop"){
+
+   document.querySelector("h1").style.fontSize = "16px";
+
+   var p = document.querySelectorAll("p");
+   p.forEach(function(p) {
+     p.style.fontSize = "14px";
+}) 
+  
+  var img = document.querySelectorAll(".img-center");
+  img.forEach(function(img){
+    img.style.width = "100%";
+  })
+
+  var margin = document.querySelector(".margin");
+  margin.style.marginLeft = "0.5%";
+  margin.style.marginRight = "0.5%";
+  
+}
+
+</script>
+
+</html>
